@@ -109,7 +109,7 @@ declare const fs: {
     move(from: string, to: string): void;
     copy(from: string, to: string): void;
     'delete'(path: string): void;
-    combine(base: string, ...local: string[]): void;
+    combine(base: string, ...local: string[]): string;
     open(path: string, mode: string): LuaMultiReturn<[FileHandle] | [null, string]>;
     find(wildcard: string): string[];
     getDir(path: string): string;
